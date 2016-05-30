@@ -11,24 +11,24 @@
     <title>Default by MayberFox</title>
   </head>
 
-<ul>
-  <a class="dropdown"><button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="dropdown-content"></a> 
-    <a href="https://www.google.com">Google</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a></div>
-</ul>
+<ul><div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="http://mayberfox.github.io/SNHS-Home-Page/">Home</a>
+    <a href="http://mayberfox.github.io/Applications/">Apply</a>
+    <a href="http://mayberfox.github.io/Momentum-Labs/">Momentum</a>
+    <a href="http://mayberfox.github.io/Frequently-Asked-Questions/">FAQ's</a>
+  </div>
+</div>
 <script>
  /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
@@ -40,12 +40,13 @@ window.onclick = function(event) {
   }
 }
 </script>
+</ul>
 
   <body>
 
     <header>
       <div class="container">
-        <h1><br>Default</h1>
+        <h1><br>Defaiult</h1>
         <h2></h2>
 
         <section id="downloads">
