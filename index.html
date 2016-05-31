@@ -41,10 +41,18 @@ window.onclick = function(event) {
 }
 </script>
 <!-- Google Custom Search Element -->
-<li><div id=”cse” style=”width:100%;”>Loading</div></li>
-<script src=”http://www.google.com/jsapi” type=”text/javascript”></script>
-<script type=”text/javascript”>google.load(‘search’, ‘1’);
-          google.setOnLoadCallback(function(){var cse = new google.search.CustomSearchControl();cse.draw(‘cse’);}, true);</script>
+<li><script>
+  (function() {
+    var cx = '004187277009431036136:-b9aimn1ouk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script></li>
+<gcse:search></gcse:search>
 
   
 </ul>
